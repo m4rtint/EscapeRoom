@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: PlaceHolderBook
+  m_EditorClassIdentifier: Assembly-CSharp:EscapeRoom:Book
+  Title: Wizards With Sticks I
+  Pages:
+  - Title: Chapter 1
+    Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+      justo nibh. Quisque scelerisque porta nibh, ac suscipit purus mattis nec. Etiam
+      libero libero, interdum nec magna ut, egestas facilisis justo. Duis ultrices
+      tincidunt enim, eleifend sodales lacus congue a. Morbi sit amet congue lectus,
+      eget imperdiet metus. Vestibulum feugiat et sapien a blandit. Suspendisse tempor
+      venenatis nibh, nec aliquet urna.
+
+      
+
+      Aenean bibendum massa ac
+      odio lacinia, vitae hendrerit purus venenatis. Donec faucibus risus enim, quis
+      aliquet dolor volutpat vitae. In in risus est. Nunc ultricies sem nunc, et
+      pulvinar erat commodo vel. Vestibulum elementum tempor arcu. Nullam nec sapien
+      vestibulum, ornare metus sed, elementum sem. Donec sodales suscipit tempus.
+      Pellentesque consectetur dignissim placerat.
+
+      
+
+      Maecenas vel
+      volutpat quam, vitae tincidunt est. Integer sagittis nunc odio, in ornare velit
+      suscipit feugiat. Integer laoreet id erat sed gravida. Aliquam ut ultrices
+      ex. Curabitur tortor risus, volutpat quis tincidunt et, iaculis quis sapien.
+      Fusce pretium sed velit et accumsan. Duis dolor est, porta vel dui vel, viverra
+      porta ex. Suspendisse mattis lorem in ligula iaculis imperdiet. Sed imperdiet
+      lacus non lacus pretium facilisis. Duis lobortis lacus sit amet turpis posuere
+      porta. Cras vehicula tortor at purus vestibulum egestas. Donec et congue nulla,
+      vel posuere augue. Fusce in hendrerit dolor. Pellentesque elit ipsum, convallis
+      eu volutpat et, fringilla sed ante. Fusce luctus porttitor ligula, in luctus
+      turpis egestas vitae.'
+    IsBookmarked: 0
+  - Title: 
+    Paragraph: 'esuada velit est facilisis felis. Vestibulum ac enim a eros rhoncus
+      venenatis lacinia eu orci. Donec in magna sit amet justo finibus faucibus.
+      Suspendisse convallis leo vel mattis hendrerit. Quisque eu sollicitudin tellus.
+      Sed vel gravida velit. Nulla quis erat gravida, hendrerit eros ac, aliquet
+      sapien.
+
+      
+
+      Aliquam eleifend ac nibh at efficitur. Phasellus at
+      sapien odio. Nullam ut tortor vel tortor placerat ultrices. Sed lorem enim,
+      convallis quis massa ac, efficitur auctor ante. Morbi in arcu in ligula rutrum
+      vehicula. Proin tempus lacus eu purus vestibulum molli'
+    IsBookmarked: 0
+  - Title: Chapter 2
+    Paragraph: ', ut pharetra ipsum accumsan in. Maecenas elementum enim eget lacinia
+      hendrerit. Donec vel lacinia risus. Aenean malesuada arcu quam, sit amet lacinia
+      urna pharetra at. Donec et libero nisi. Aenean ac accumsan orci. Sed blandit,
+      ipsum in lacinia vehicula, dui urna blandit diam, at semper tellus massa in
+      lectus. Vivamus molestie congue ultrices. Vestibulum maximus, tellus ut semper
+      tempus, lacus urna porttitor eros, eu malesuada velit est facilisis felis.
+      Vestibulum ac enim a eros rhoncus venenatis lacinia eu orci. Donec in magna
+      sit amet justo finibus faucibus. Suspendisse convallis leo vel mattis hendrerit.
+      Quisque eu sollicitudin tellus. Sed vel gravida velit. Nulla quis erat gravida,
+      hendrerit eros ac, aliquet sapien.
+
+      
+
+      Aliquam eleifend ac nibh
+      at efficitur. Phasellus at sapien odio. Nullam ut tortor vel tortor placerat
+      ultrices. Sed lorem enim, convallis quis massa ac, efficitur auctor ante. Morbi
+      in arcu in ligula rutrum vehicula. Proin tempus lacus eu purus vestibulum mollis.
+      Suspendisse potenti. Quisque ut aliquet lacus. Sed efficitur arcu a eros efficitur
+      pretium. Duis scelerisque mi ut nunc eleifend pulvinar. Integer mattis efficitur
+      mi vitae lobortis.
+
+      
+
+      Sed pellentesque malesuada ante, ut tincidunt
+      ante ullamcorper eu. Duis vehicula rhoncus sodales. Aliquam eget'
+    IsBookmarked: 0
+  - Title: 
+    Paragraph: 'orem in ligula iaculis imperdiet. Sed imperdiet lacus non lacus pretium
+      facilisis. Duis lobortis lacus sit amet turpis posuere porta. Cras vehicula
+      tortor at purus vestibulum egestas. Donec et congue nulla, vel posuere augue.
+      Fusce in hendrerit dolor. Pellentesque elit ipsum, convallis eu volutpat et,
+      fringilla sed ante. Fusce luctus porttitor ligula, in luctus turpis egestas
+      vitae.
+
+      
+
+      In blandit nibh posuere tincidunt consectetur. Suspendisse
+      quis tortor sed ante vestibulum semper. Sed urna erat, tempus et massa ut,
+      maximus facilisis mauris. Etiam ultricies semper facilisis. Pellentesque fermentum
+      eros a sem ornare scelerisque. In eu enim at nisi efficitur viverra. Duis pellentesque
+      nec enim id imperdiet.
+
+      
+
+      Proin non eleifend dolor. Nam et interdum
+      justo, a rhoncus justo. Mauris sit amet dignissim magna. Suspendisse dapibus,
+      nunc non congue rutrum, nisi arcu porta ante, quis sodales odio lorem vitae
+      purus. Etiam laoreet, quam id tempus sodales, ex dui volutpat urna, non auctor
+      libero purus id risus. Ut semper mollis ex non sollicitudin. Donec congue lacus
+      eu nunc lobortis, at malesuada erat sodales'
+    IsBookmarked: 0
+  - Title: 
+    Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+      justo nibh. Quisque scelerisque porta nibh, ac suscipit purus mattis nec. Etiam
+      libero libero, interdum nec magna ut, egestas facilisis justo. Duis ultrices
+      tincidunt enim, eleifend sodales lacus congue a. Morbi sit amet congue lectus,
+      eget imperdiet metus. Vestibulum feugiat et sapien a blandit. Suspendisse tempor
+      venenatis nibh, nec aliquet urna.
+
+      
+
+      Aenean bibendum massa ac
+      odio lacinia, vitae hendrerit purus venenatis. Donec faucibus risus enim, quis
+      aliquet dolor volutpat vitae. In in risus est. Nunc ultricies sem nunc, et
+      pulvinar erat commodo vel. Vestibulum elementum tempor arcu. Nullam nec sapien
+      vestibulum, ornare metus sed, elementum sem. Donec sodales suscipit tempus.
+      Pellentesque consectetur dignissim placerat.
+
+      
+
+      Maecenas vel
+      volutpat quam, vitae tincidunt est. Integer sagittis nunc odio, in ornare velit
+      suscipit feugiat. Integer laoreet id erat sed gravida. Aliquam ut ultrices
+      ex. Curabitur tortor risus, volutpat quis tincidunt et, iaculis quis sapien.
+      Fusce pretium sed velit et accumsan. Duis dolor est, porta vel dui vel, viverra
+      porta ex. Suspendisse mattis lorem in ligula iaculis imperdiet. Sed imperdiet
+      lacus non lacus pretium facilisis. Duis lobortis lacus sit amet turpis posuere
+      porta. Cras vehicula tortor at purus vestibulum egestas. Donec et congue nulla,
+      vel posuere augue. Fusce in hendrerit dolor. Pellentesque elit ipsum, convallis
+      eu volutpat et, fringilla sed ante. Fusce luctus porttitor ligula, in luctus
+      turpis egestas vitae.'
+    IsBookmarked: 0
+  - Title: Chapter 3
+    Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+      justo nibh. Quisque scelerisque porta nibh, ac suscipit purus mattis nec. Etiam
+      libero libero, interdum nec magna ut, egestas facilisis justo. Duis ultrices
+      tincidunt enim, eleifend sodales lacus congue a. Morbi sit amet congue lectus,
+      eget imperdiet metus. Vestibulum feugiat et sapien a blandit. Suspendisse tempor
+      venenatis nibh, nec aliquet urna.
+
+      
+
+      Aenean bibendum massa ac
+      odio lacinia, vitae hendrerit purus venenatis. Donec faucibus risus enim, quis
+      aliquet dolor volutpat vitae. In in risus est. Nunc ultricies sem nunc, et
+      pulvinar erat commodo vel. Vestibulum elementum tempor arcu. Nullam nec sapien
+      vestibulum, ornare metus sed, elementum sem. Donec sodales suscipit tempus.
+      Pellentesque consectetur dignissim placerat.
+
+      
+
+      Maecenas vel
+      volutpat quam, vitae tincidunt est. Integer sagittis nunc odio, in ornare velit
+      suscipit feugiat. Integer laoreet id erat sed gravida. Aliquam ut ultrices
+      ex. Curabitur tortor risus, volutpat quis tincidunt et, iaculis quis sapien.
+      Fusce pretium sed velit et accumsan. Duis dolor est, porta vel dui vel, viverra
+      porta ex. Suspendisse mattis lorem in ligula iaculis imperdiet. Sed imperdiet
+      lacus non lacus pretium facilisis. Duis lobortis lacus sit amet turpis posuere
+      porta. Cras vehicula tortor at purus vestibulum egestas. Donec et congue nulla,
+      vel posuere augue. Fusce in hendrerit dolor. Pellentesque elit ipsum, convallis
+      eu volutpat et, fringilla sed ante. Fusce luctus porttitor ligula, in luctus
+      turpis egestas vitae.'
+    IsBookmarked: 0
+  - Title: 
+    Paragraph: 'u sollicitudin tellus. Sed vel gravida velit. Nulla quis erat gravida,
+      hendrerit eros ac, aliquet sapien.
+
+      
+
+      Aliquam eleifend ac nibh
+      at efficitur. Phasellus at sapien odio. Nullam ut tortor vel tortor placerat
+      ultrices. Sed lorem enim, convallis quis massa ac, efficitur auctor ante. Morbi
+      in arcu in ligula rutrum vehicula. Proin tempus lacus eu purus vestibulum mollis.
+      Suspendisse potenti. Quisque ut aliquet lacus. Sed efficitur arcu a eros efficitur
+      pretium. Duis scelerisque mi ut nunc eleifend pulvinar. Integer mattis efficitur
+      mi vitae lobortis.
+
+      
+
+      Sed pellentesque malesuada ante, ut tincidunt
+      ante ullamcorper eu. Duis vehicula rhoncus sodales. Aliquam eget risus ac diam
+      molestie imperdiet. Mauris facilisis dolor in tortor aliquet, vitae fermentum
+      leo accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      Morbi consectetur vitae sapien sit amet ultrices. Duis pharetra, est posuere
+      ultricies tincidunt, tellus tortor sagittis turpis, vel varius mi ante sed
+      mi. Quisque fermentum porttitor velit, quis tristique magna tempus sit amet.
+      Etiam congue nisl a ante tincidunt commodo. Vivamus aliquam, lorem vel consectetur
+      iaculis, ante ipsum mollis nunc, eget sagittis dolor tortor sit amet lorem.
+
+      
+
+      Suspendisse
+      magna elit, ullamcorper id luctus a, cursus ut lorem. Suspendisse potenti.
+      Morbi est quam, faucibus et iaculis at, suscipit sed quam. Sed quis neque purus.
+      Suspendisse nec egestas arcu. Morbi rhoncus pulvinar nu'
+    IsBookmarked: 0

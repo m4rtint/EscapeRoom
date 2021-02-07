@@ -44,3 +44,6 @@ TagManager:
   - name: Toolbar
     uniqueID: 2524087095
     locked: 0
+  - name: Book
+    uniqueID: 1523322271
+    locked: 0

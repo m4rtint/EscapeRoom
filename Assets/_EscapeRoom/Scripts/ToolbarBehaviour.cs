@@ -13,12 +13,12 @@ namespace EscapeRoom
         private void OnEnable()
         {
             _toolbar = new Toolbar();
-            _toolbar.OnSlotChange += OnHandSlotChange;
+            _toolbar.OnSlotChange += HandleOnSlotChange;
         }
 
         private void OnDisable()
         {
-            _toolbar.OnSlotChange -= OnHandSlotChange;
+            _toolbar.OnSlotChange -= HandleOnSlotChange;
         }
 
         private void Start()
@@ -35,7 +35,7 @@ namespace EscapeRoom
             }
         }
 
-        private void OnHandSlotChange(Vector2 position)
+        private void HandleOnSlotChange(Vector2 position)
         {
             _selectedSlot.anchoredPosition = position;
         }
