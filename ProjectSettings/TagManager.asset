@@ -47,3 +47,6 @@ TagManager:
   - name: Book
     uniqueID: 1523322271
     locked: 0
+  - name: CombinationLock
+    uniqueID: 578140779
+    locked: 0
