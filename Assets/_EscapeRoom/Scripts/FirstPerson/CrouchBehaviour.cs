@@ -15,7 +15,7 @@ namespace EscapeRoom
 
         [SerializeField] GroundCheck groundCheck;
 
-        public KeyCode[] keys = new KeyCode[] {KeyCode.LeftControl, KeyCode.RightControl};
+        public KeyCode[] keys = new KeyCode[] { KeyCode.LeftControl, KeyCode.RightControl };
         private bool IsCrouched { get; set; }
         public event System.Action CrouchStart, CrouchEnd;
 

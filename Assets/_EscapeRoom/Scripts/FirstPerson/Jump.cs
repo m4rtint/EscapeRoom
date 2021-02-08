@@ -6,7 +6,7 @@ namespace EscapeRoom
     {
         [SerializeField] 
         private GroundCheck groundCheck;
-        private Rigidbody rigidbody;
+        private new Rigidbody rigidbody;
         [SerializeField]
         private float jumpStrength = 2;
         [SerializeField]
