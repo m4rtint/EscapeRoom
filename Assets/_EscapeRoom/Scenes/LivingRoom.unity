@@ -344,6 +344,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1413576943}
     m_Modifications:
+    - target: {fileID: 4742552001555437293, guid: 0d904440d543fab4db2138911cae2eef,
+        type: 3}
+      propertyPath: _defaultCrosshairSprite
+      value: 
+      objectReference: {fileID: 7560987427076817584, guid: 5d353e9d576fddd48a83f0e4f214ac05,
+        type: 3}
     - target: {fileID: 5284129698867196463, guid: 0d904440d543fab4db2138911cae2eef,
         type: 3}
       propertyPath: m_Name

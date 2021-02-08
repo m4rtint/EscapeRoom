@@ -31,7 +31,7 @@ namespace EscapeRoom
             }
 
             _crosshair.State = interactable == null
-                ? UICrosshair.CrosshairStates.None
+                ? UICrosshair.CrosshairStates.Default
                 : UICrosshair.CrosshairStates.Interactable;
         }
     }
