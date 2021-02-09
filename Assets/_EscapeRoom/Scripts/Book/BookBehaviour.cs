@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,8 +24,14 @@ namespace EscapeRoom
             set => _pageNumber = Mathf.Clamp(value, 0, _book.Pages.Length - 1);
         }
 
+        public void SetBook(Book book)
+        {
+            _book = book;
+        }
+
         private void OnEnable()
         {
+            PageNumber = 0;
             _backButton.onClick.AddListener(() =>
             {
                 UpdatePage(false);
@@ -33,12 +40,25 @@ namespace EscapeRoom
             {
                 UpdatePage(true);
             });
+            
+            StateManager.Instance.SetState(State.Reading);
         }
 
         private void OnDisable()
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            StateManager.Instance.SetState(State.Play);
             _backButton.onClick.RemoveAllListeners();
             _forwardButton.onClick.RemoveAllListeners();
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape) && StateManager.Instance.GetState() == State.Reading)
+            {
+                gameObject.SetActive(false);
+            }
         }
 
         private void Start()
