@@ -46,8 +46,6 @@ namespace EscapeRoom
 
         private void OnDisable()
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
             StateManager.Instance.SetState(State.Play);
             _backButton.onClick.RemoveAllListeners();
             _forwardButton.onClick.RemoveAllListeners();
