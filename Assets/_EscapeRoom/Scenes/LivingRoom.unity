@@ -344,12 +344,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1413576943}
     m_Modifications:
-    - target: {fileID: 4742552001555437293, guid: 0d904440d543fab4db2138911cae2eef,
-        type: 3}
-      propertyPath: _defaultCrosshairSprite
-      value: 
-      objectReference: {fileID: 7560987427076817584, guid: 5d353e9d576fddd48a83f0e4f214ac05,
-        type: 3}
     - target: {fileID: 5284129698867196463, guid: 0d904440d543fab4db2138911cae2eef,
         type: 3}
       propertyPath: m_Name
@@ -771,7 +765,6 @@ GameObject:
   - component: {fileID: 81448068878198477}
   - component: {fileID: 114657889015140513}
   - component: {fileID: 114103970899516325}
-  - component: {fileID: 1593728149905220}
   m_Layer: 0
   m_Name: First person camera
   m_TagString: MainCamera
@@ -779,20 +772,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1593728149905220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593728149905219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c5efe89dff6954082d4287208839da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _crosshair: {fileID: 2142068189}
-  _interactDistance: 2
 --- !u!1 &1773622690327159
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +786,7 @@ GameObject:
   - component: {fileID: 114963310409354219}
   - component: {fileID: 114497867559980563}
   - component: {fileID: 114762042768282169}
+  - component: {fileID: 1773622690327160}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -814,6 +794,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1773622690327160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773622690327159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0c3638fbd3b684fb4f58d6bf536abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 20437470937423725}
+  _crosshair: {fileID: 2142068189}
+  _interactDistance: 2
+  _inventory:
+    _items: []
 --- !u!4 &4207292990730719
 Transform:
   m_ObjectHideFlags: 0
@@ -994,7 +991,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593728149905219}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780f90e951d635f439326ea715cd97e9, type: 3}
   m_Name: 
@@ -1100,6 +1097,75 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!1001 &2832633982340357943
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3252476250559477773, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_Name
+      value: Pickup - Water Bottle (Full)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174325557888099349, guid: d40e461f26d26b342822676f9822b29b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d40e461f26d26b342822676f9822b29b, type: 3}
 --- !u!1001 &7905839420197325855
 PrefabInstance:
   m_ObjectHideFlags: 0

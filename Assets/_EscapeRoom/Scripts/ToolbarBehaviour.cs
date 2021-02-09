@@ -39,7 +39,6 @@ namespace EscapeRoom
         {
             _selectedSlot.anchoredPosition = position;
         }
-        
     }
 
     public class Toolbar

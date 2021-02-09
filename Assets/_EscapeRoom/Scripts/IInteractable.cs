@@ -2,7 +2,7 @@
 {
     public interface IInteractable
     {
-        void InteractWith();
+        void InteractWith(Player player);
         //void InteractWithItem(Item item); // TODO Implement items and uncomment this method
     }
 }
