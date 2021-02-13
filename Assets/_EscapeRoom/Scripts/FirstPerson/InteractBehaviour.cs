@@ -18,8 +18,7 @@ namespace EscapeRoom
                 .Where(x => x.transform.GetComponent<IInteractable>() != null)
                 .OrderBy(r => r.distance)
                 .First();
-            var interactable = closestHit.transform.GetComponent<IInteractable>();
-            return interactable;
+            return closestHit.transform.GetComponent<IInteractable>();
         }
 
         private void Update()

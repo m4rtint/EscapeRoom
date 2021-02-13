@@ -18,14 +18,12 @@ namespace EscapeRoom
             character = GetComponentInParent<FirstPersonMovement>().transform;
         }
 
-        private void Start()
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-
         private void Update()
         {
+            if (StateManager.Instance.GetState() != State.Play)
+            {
+                return;
+            }
             // Get smooth mouse look.
             Vector2 smoothMouseDelta =
                 Vector2.Scale(new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")),

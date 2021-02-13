@@ -26,7 +26,6 @@ namespace EscapeRoom
       private void OnEnable()
       {
          _upperButton.onClick.AddListener(() => { UpdateCombinationPosition(true); });
-
          _lowerButton.onClick.AddListener(() => { UpdateCombinationPosition(false); });
       }
 
