@@ -9,7 +9,7 @@ namespace EscapeRoom
 
         public event Action<Book> OnInteractedWith;
         
-        public void InteractWith()
+        public void InteractWith(Player player)
         {
             if (OnInteractedWith != null)
             {

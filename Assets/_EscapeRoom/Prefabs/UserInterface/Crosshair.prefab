@@ -88,8 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 856bed9823fdec54796342f934a109cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crosshairImage: {fileID: 2528736880514439509}
-  _noneCrosshairSprite: {fileID: 7560987427076817584, guid: 5d353e9d576fddd48a83f0e4f214ac05,
+  _defaultCrosshairSprite: {fileID: 7560987427076817584, guid: 5d353e9d576fddd48a83f0e4f214ac05,
     type: 3}
   _interactableCrosshairSprite: {fileID: -1679917302060462780, guid: 5d353e9d576fddd48a83f0e4f214ac05,
     type: 3}

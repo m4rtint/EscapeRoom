@@ -1,80 +1,49 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace EscapeRoom
 {
     public class ToolbarBehaviour : MonoBehaviour
     {
-        private const string InputMouseScrollWheel = "Mouse ScrollWheel";
         [SerializeField] private RectTransform _selectedSlot = null;
+        [SerializeField] private List<ItemSlot> _itemSlots = new List<ItemSlot>();
+        private ItemSlot _currentSelectedSlot = null;
 
-        private Toolbar _toolbar = null;
-        
-        private void OnEnable()
-        {
-            _toolbar = new Toolbar();
-            _toolbar.OnSlotChange += HandleOnSlotChange;
-        }
-
-        private void OnDisable()
-        {
-            _toolbar.OnSlotChange -= HandleOnSlotChange;
-        }
+        public int NumberOfToolbarSlots { get; set; } = 11;
 
         private void Start()
         {
-            _toolbar.UpdateSelectedToolIndex(0);
+            _itemSlots = new List<ItemSlot>(GetComponentsInChildren<ItemSlot>());
+
+            // Start by positioning the select item at position 0
+            ChangeSelectedSlot(0);
+            SetItems(null);
         }
 
-        private void Update()
+        public void SetItems(IReadOnlyList<GenericItem> items)
         {
-            var scrollDirection = (int) Input.GetAxis(InputMouseScrollWheel);
-            if (scrollDirection != 0)
+            int count = items?.Count ?? 0;
+            int i;
+
+            // Activate toolbar slots for the first items
+            for (i = 0; i < count; i++)
             {
-                _toolbar.UpdateSelectedToolIndex(scrollDirection);
+                _itemSlots[i].SetItem(items[i]);
+            }
+
+            // Deactivate the remaining toolbar slots
+            for (; i < _itemSlots.Count; i++)
+            {
+                _itemSlots[i].SetItem(null);
             }
         }
 
-        private void HandleOnSlotChange(Vector2 position)
+        public void ChangeSelectedSlot(int itemIndex)
         {
-            _selectedSlot.anchoredPosition = position;
-        }
-        
-    }
-
-    public class Toolbar
-    {
-        private const float OffsetStart = 50f;
-        private const float OffsetPosition = 100f;
-        private const int NumberOfToolbarSlots = 11;
-        private int _selectedToolIndex = 0;
-
-        public event Action<Vector2> OnSlotChange;
-
-        private Vector2 GetSlotPosition()
-        {
-            var position = (_selectedToolIndex * OffsetPosition) + OffsetStart;
-            return new Vector2(position, 0);
-        }
-
-        public void UpdateSelectedToolIndex(int direction)
-        {
-            _selectedToolIndex += direction;
-            if (_selectedToolIndex >= NumberOfToolbarSlots)
-            {
-                _selectedToolIndex = 0;
-            }
-            
-            if (_selectedToolIndex < 0)
-            {
-                _selectedToolIndex = NumberOfToolbarSlots - 1;
-            }
-            
-
-            if (OnSlotChange != null)
-            {
-                OnSlotChange(GetSlotPosition());
-            }
+            _currentSelectedSlot?.SetSelected(false);
+            _currentSelectedSlot = _itemSlots[itemIndex];
+            _currentSelectedSlot.SetSelected(true);
         }
     }
 }
